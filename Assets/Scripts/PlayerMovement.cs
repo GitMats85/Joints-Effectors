@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
-    MouseTarget mouseTarget;
     Collider2D bodyColl;
     Collider2D feetColl;
     ParticleSystem dust;
@@ -32,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        mouseTarget = GameObject.FindObjectOfType<MouseTarget>();
         dust = GetComponentInChildren<ParticleSystem>(); 
     }
 
@@ -49,14 +47,8 @@ public class PlayerMovement : MonoBehaviour
         shouldJump = true;
     }
 
-    void OnFire()
+    void Update()
     {
-        mouseTarget.MoveToMousePosition();
-    }
-
-    private void Update()
-    {
-        
         if (moveInput.Equals(Vector2.zero) && isGrounded)
         {
             ChangeAnimationState(PLAYER_IDLE);
@@ -76,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         //Jump function
-        if (isGrounded && shouldJump)
+        if (shouldJump)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             ChangeAnimationState(PLAYER_JUMP);

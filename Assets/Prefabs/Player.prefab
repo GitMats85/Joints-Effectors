@@ -161,13 +161,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  jumpForce: 5
+  jumpForce: 10
   groundFilter:
     useTriggers: 0
     useLayerMask: 1
     useDepth: 0
     useOutsideDepth: 0
-    useNormalAngle: 1
+    useNormalAngle: 0
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
@@ -274,7 +274,7 @@ MonoBehaviour:
   - {x: -0.023829937, y: -0.3330524, z: 0}
   m_ShapePathHash: 890393473
   m_Mesh: {fileID: 0}
-  m_InstanceId: 42676
+  m_InstanceId: -10208
   m_LocalBounds:
     m_Center: {x: 0.080156624, y: -0.03578365, z: 0}
     m_Extent: {x: 0.29898363, y: 0.4893762, z: 0}

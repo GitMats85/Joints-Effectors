@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /// <summary>
 /// Set the TargetJoint2D to follow the mouse position.
@@ -18,9 +19,14 @@ public class MouseTarget : MonoBehaviour
 		// Finish if no joint detected.
 		if (targetJoint == null)
 			return;
-	} 
+	}
 
-	public void MoveToMousePosition()
+    void OnFire()
+    {
+        MoveToMousePosition();
+    }
+
+    public void MoveToMousePosition()
     {
             // Finish if no joint detected.
             if (targetJoint == null)
