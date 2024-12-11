@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2740503567310785759}
   - component: {fileID: 1907320706202359928}
   - component: {fileID: 5392074630233171007}
-  - component: {fileID: 6114103726749625866}
+  - component: {fileID: 8807515241383499460}
   - component: {fileID: 7139958115561519484}
   - component: {fileID: 4115761823485753335}
   - component: {fileID: 6326565605294454351}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: ca4fe166f33f6504eab06a0589eaf217,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 1
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -136,7 +136,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.5
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -148,7 +148,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &6114103726749625866
+--- !u!114 &8807515241383499460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,25 +157,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 5535971030466303019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432b00637280cb444952c9391668e15d, type: 3}
+  m_Script: {fileID: 11500000, guid: 00b8d0320d2b4cf4fab11c6099236bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
-  jumpForce: 10
+  accRate: 50
+  maxSpeed: 10
+  decelRate: 75
+  jumpForce: 850
   groundFilter:
-    useTriggers: 0
+    useTriggers: 1
     useLayerMask: 1
     useDepth: 0
     useOutsideDepth: 0
-    useNormalAngle: 0
+    useNormalAngle: 1
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
       m_Bits: 528
     minDepth: 0
     maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
+    minNormalAngle: 45
+    maxNormalAngle: 110
 --- !u!95 &7139958115561519484
 Animator:
   serializedVersion: 5
@@ -274,7 +276,7 @@ MonoBehaviour:
   - {x: -0.023829937, y: -0.3330524, z: 0}
   m_ShapePathHash: 890393473
   m_Mesh: {fileID: 0}
-  m_InstanceId: -10208
+  m_InstanceId: -26804
   m_LocalBounds:
     m_Center: {x: 0.080156624, y: -0.03578365, z: 0}
     m_Extent: {x: 0.29898363, y: 0.4893762, z: 0}

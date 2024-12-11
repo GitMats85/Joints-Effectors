@@ -206,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 41997124792182512, guid: 9cd3160d50df9dc41a8d54655c291e87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 35.5
       objectReference: {fileID: 0}
     - target: {fileID: 41997124792182512, guid: 9cd3160d50df9dc41a8d54655c291e87,
         type: 3}
@@ -216,7 +216,7 @@ PrefabInstance:
     - target: {fileID: 2756873868678508122, guid: 9cd3160d50df9dc41a8d54655c291e87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 35.5
       objectReference: {fileID: 0}
     - target: {fileID: 2756873868678508122, guid: 9cd3160d50df9dc41a8d54655c291e87,
         type: 3}
@@ -1343,13 +1343,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 770120171}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &829817873 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9033252953569890042, guid: f960b22fc71e22b41a8ef2412a79350c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1318758506}
-  m_PrefabAsset: {fileID: 0}
---- !u!43 &901490916
+--- !u!43 &801440173
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1514,6 +1508,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &829817873 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9033252953569890042, guid: f960b22fc71e22b41a8ef2412a79350c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1318758506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &923459685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1845,7 +1845,7 @@ Transform:
   m_GameObject: {fileID: 1095631350}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.550003, y: 6.20691, z: 0}
+  m_LocalPosition: {x: -2.550003, y: 3.863086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1859,7 +1859,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095631350}
-  m_Text: Surface  Effector
+  m_Text: Surface  Effectors
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -2465,12 +2465,12 @@ PrefabInstance:
     - target: {fileID: 9033252953569890042, guid: f960b22fc71e22b41a8ef2412a79350c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 35.5
       objectReference: {fileID: 0}
     - target: {fileID: 9033252953569890042, guid: f960b22fc71e22b41a8ef2412a79350c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 9033252953569890042, guid: f960b22fc71e22b41a8ef2412a79350c,
         type: 3}
@@ -2639,7 +2639,7 @@ Transform:
   m_GameObject: {fileID: 1361267379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 138.90001, y: -2.3438241, z: 0}
+  m_LocalPosition: {x: 138.90001, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
